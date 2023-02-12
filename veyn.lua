@@ -5924,3 +5924,15 @@ game.Players.LocalPlayer.Character.LOL.CFrame = game.Players.LocalPlayer.Charact
 game.Players.LocalPlayer.Character.LOL.Velocity = Vector3.new(0,-122,0)
 until game.Players.LocalPlayer.Character.Humanoid.Health == 0
 end)
+AddCommand('zombie', function()
+		--void
+local p = game:GetService('Players')
+local lp = p.LocalPlayer
+local Char = lp.Character
+Char.Animate.climb.ClimbAnim.AnimationId = 'http://www.roblox.com/asset/?ID=616156119'
+Char.Animate.fall.FallAnim.AnimationId = 'http://www.roblox.com/asset/?ID=616157476'
+Char.Animate.idle.Animation1.AnimationId = 'http://www.roblox.com/asset/?ID=3489171152'
+Char.Animate.run.RunAnim.AnimationId = 'http://www.roblox.com/asset/?ID=3489173414'
+Char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?ID=2489234123"
+Char.Animate.idle.Animation2.AnimationId = 'http://www.roblox.com/asset/?ID=3489171152'
+end)
