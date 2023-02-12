@@ -5913,3 +5913,14 @@ for i,v in pairs(workspace.PlayersCharacters:GetChildren()) do
 end
 until nil
 end)
+AddCommand('mortemrun', function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint:Destroy()
+game.Players.LocalPlayer.Character.HumanoidRootPart.Name = "LOL"
+game.Players.LocalPlayer.Character.Humanoid.Parent = game.Lighting
+game.Lighting.Humanoid.Parent = game.Players.LocalPlayer.Character
+repeat
+game.RunService.Heartbeat:wait()
+game.Players.LocalPlayer.Character.LOL.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame * CFrame.new(0,-122,0)
+game.Players.LocalPlayer.Character.LOL.Velocity = Vector3.new(0,-122,0)
+until game.Players.LocalPlayer.Character.Humanoid.Health == 0
+end)
