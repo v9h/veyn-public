@@ -5913,7 +5913,7 @@ for i,v in pairs(workspace.PlayersCharacters:GetChildren()) do
 end
 until nil
 end)
-AddCommand('mortemrun', function()
+AddCommand('godmode', function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint:Destroy()
 game.Players.LocalPlayer.Character.HumanoidRootPart.Name = "LOL"
 game.Players.LocalPlayer.Character.Humanoid.Parent = game.Lighting
